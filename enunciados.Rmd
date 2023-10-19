@@ -1,0 +1,24 @@
+---
+title: "Enunciados"
+output: html_document
+date: "2023-10-19"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("teoriadecision_funciones_incertidumbre.R")
+```
+
+# Ejercicio 1
+
+Para la siguiente tabla de decisión, resolver mediante cada método de Incertidumbre tanto en el caso favorable como desfavorable.
+
+
+```{r}
+tabla1 = crea.tablaX(c(3,-2,6,2,
+                      8,4,2,6,
+                      -1,5,7,3),
+                    numalternativas =3,
+                    numestados = 4)
+knitr::kable(tabla1)
+```
